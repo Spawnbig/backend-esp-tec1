@@ -36,6 +36,7 @@ const schemaRegister = joi.object({
     })
     User.create(newUser).then(() => {
         res.status(201).send('Registro exitoso');
+        
     }).catch(error => {
         res.status(400).send({ error });
     })
