@@ -5,8 +5,8 @@ const User = require('../models/User');
 
 
 const schemaRegister = joi.object({
-    firstName: joi.string().min(6).max(255).required(),
-    lastName: joi.string().min(6).max(255).required(),
+    firstName: joi.string().min(3).max(255).required(),
+    lastName: joi.string().min(3).max(255).required(),
     username: joi.string().required(),
     role: joi.string().required(),
     email: joi.string().min(6).max(255).required().email(),
